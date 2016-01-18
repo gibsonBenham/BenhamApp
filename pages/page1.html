@@ -1,0 +1,41 @@
+<div class ="container">
+    <h2>Standing Payment Instructions</h2>
+    <p>
+      Use this form to establish or change standing Check Disbursement, Bank Wire, Electronic Funds Transfer (“EFT”), 
+      and/or Journal instructions on your brokerage account, including eligible retirement and nonretirement accounts (“Fidelity Brokerage Accounts”). 
+      Asset Movement Authorization (granted via the new account application or a separate form) may be required for your Authorized agent/Advisor to use these standing instructions on your behalf. 
+      Complete only the sections applicable to your transaction. Type on screen.
+      If you need more room for information or signatures, use a copy of the relevant page.
+    </p>
+    <div class="row">   
+      <h3>Authorized agent/Advisor:</h3>
+        <input class="col-xs-10 col-sm-8 col-md-8" type="text" placeholder="Firm Name" data-ng-model="customerData.agentName"/>
+        <input class="col-xs-2 col-sm-4 col-md-4" type="text" placeholder="G Number" data-ng-model="customerData.agentNumber"/> 
+    </div> 
+    <div class="row">
+      <h3>Account Owner:</h3>
+    </div>
+    <div class="row">
+        <input class="col-xs-6 col-sm-5 col-md-5" type="text" placeholder="First Name" data-ng-model="customerData.firstName"/>
+        <input class="col-xs-1 col-sm-1 col-md-1" type="text" placeholder="M.I" data-ng-model="customerData.middleI"/>  
+        <input class="col-xs-6 col-sm-6 col-md-6" type="text" placeholder="Last Name" data-ng-model="customerData.lastName"/>
+    </div>
+    <div class="row">
+      <input class="col-xs-6 col-sm-5 col-md-5" type="text" placeholder="Daytime Phone Number" data-ng-model="customerData.phoneNumber"/>
+      <input class="col-xs-2 col-sm-2 col-md-2  col-xs-offset-1 col-sm-offset-1 col-md-offset-1" type="text" placeholder="Extention" data-ng-model="customerData.phoneExt"/>  
+    </div>
+    <div class="row">
+      <input class="col-xs-3 col-sm-3 col-md-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1" type="text" placeholder="Account Number" data-ng-model="customerData.firstAccount"/>
+      <input class="col-xs-3 col-sm-3 col-md-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1" type="text" placeholder="Account Number" data-ng-model="customerData.secondAccount"/>  
+      <input class="col-xs-3 col-sm-3 col-md-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1" type="text" placeholder="Account Number" data-ng-model="customerData.thirdAccount"/>
+    </div>
+    <div class="row">
+      <h3>Additional Owner</h3>
+      <input class="col-xs-12 col-sm-12 col-md-12" type="text" placeholder="Additional Owner, Company or Trust Name, if Applicable" data-ng-model="customerData.additionalOwner"/>    
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+      <a class="btn btn-default" ng-href="#/page3" ng-click="addCustomerData()">Submit</a>
+    </div>
+</div>

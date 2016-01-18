@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="benhamApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Benham Test</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body ng-controller="bodyController">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#/page1">Enter Account Info</a></li>
+      <li role="presentation"><a href="#/page3">View Account Info</a></li>
+    </ul> 
+
+    <div class = "container"> 
+      <h1>Welcome to Fidelity</h1>
+      <p>Welcome {{message}}</p>
+      <div ng-view></div>
+    </div>
+    
+    <script src="//code.angularjs.org/1.3.0-beta.13/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.3.0-beta.13/angular-route.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
